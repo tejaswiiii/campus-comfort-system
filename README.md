@@ -1,11 +1,11 @@
 # Smart Campus Comfort & Crowd Prediction
 
-An AI system predicting campus crowd density and environmental comfort for intelligent navigation using Neural Networks and Fuzzy Logic.
+A system predicting campus crowd density and environmental comfort for intelligent navigation using Neural Networks and Fuzzy Logic.
 
 ## Features
 
 - Deep Neural Network for crowd density prediction
-- Fuzzy Logic System for comfort scoring (13 rules)
+- Fuzzy Logic System for comfort scoring
 - Real-time weather integration via WeatherAPI
 - Campus zone mapping via OpenStreetMap/OSMnx
 - Smart walking recommendations based on live conditions
