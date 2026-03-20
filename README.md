@@ -23,7 +23,7 @@ Key features: zone type, shade score, temperature, humidity, wind speed, hour of
 
 ## Program Requirements
 ```bash
-pip install tensorflow scikit-learn scikit-fuzzy pandas numpy osmnx geopandas plotly requests streamlit
+pip install -r requirements.txt
 ```
 
 ## Demo
@@ -46,12 +46,13 @@ Select a campus zone and time to get comfort scores, crowd predictions, and opti
 
 ## Project structure
 ```
-notebooks/          Main Colab notebook
-src/                Data collection, model, fuzzy logic, recommendations
-models/             Trained neural network and zone encoder
-data/               Zone, weather, and feature datasets
-results/            Visualizations and evaluation outputs
-streamlit_app.py    Dashboard
+google_colab_campus_finder.ipynb    Main Colab notebook
+streamlit_app.py                    Interactive dashboard
+crowd_model.keras                   Trained neural network
+label_encoder_zone.joblib           Zone encoder
+features_with_comfort_final.csv     Final dataset with comfort scores
+zones.csv                           Campus zone information
+requirements.txt                    Dependencies
 ```
 
 ## Model performance
@@ -64,7 +65,7 @@ Zone differentiation:              45-point comfort spread
 ## Tech stack
 
 - Python 3.8+
-- TensorFlow 2.x
+- TensorFlow 2.14
 - scikit-fuzzy
 - OSMnx / GeoPandas
 - Plotly, Streamlit
